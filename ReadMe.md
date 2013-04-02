@@ -122,7 +122,7 @@
 	#sh build.sh
 
 ###6、安装istock_push依赖的nodeJS模块
-	切换到istock_push目录
+	切换到istock_push目录,以下操作需要连接到互联网
 	#cd istock_push
 	#npm install socket.io
 	#npm install connect
