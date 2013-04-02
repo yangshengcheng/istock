@@ -68,19 +68,23 @@
 		一般系统安装时已经将make和gcc安装，若是没有安装或者版本不正确，请从操作系统安装光碟中找到相应的rpm文件进行安装
 
 ###2、jdk安装
-	# chmod 755 jdk-6u24-linux-i586.bin 
-	#./jdk-6u24-linux-i586.bin
+	# chmod 755 ./jdk-6u29-linux-i586-rpm.bin 
+	#./jdk-6u29-linux-i586-rpm.bin
 
-	在 /etc/profile  最后面加入
-	export JAVA_HOME=/usr/local/Java/jdk1.6.0_24
+	一般安装在/usr/java/jdk1.6.0_29这个目录下
+	
+	#chmod u+wx /etc/profile
+	然后在 /etc/profile  最后面加入
+	export JAVA_HOME=/usr/java/jdk1.6.0_29
 	
 	立即生效
 	#source /etc/profile
 	查看安装结果
-	#java -version
-	java version "1.6.0_24"  
-	Java(TM) SE Runtime Environment (build 1.6.0_24-b07)  
-	Java HotSpot(TM) Server VM (build 19.1-b02, mixed mode)
+	#$JAVA_HOME/bin/java -version
+	java version "1.6.0_29"
+	Java(TM) SE Runtime Environment (build 1.6.0_29-b11)
+	Java HotSpot(TM) Server VM (build 20.4-b02, mixed mode)
+
 
 ###3、python安装，用于node的编译(原python版本非2.7系列的情况)
 	#tar xvfj Python-2.7.3.tar.bz2
