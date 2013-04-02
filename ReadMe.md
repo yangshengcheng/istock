@@ -90,7 +90,7 @@
 	#ln  -s /usr/local/python2.7/bin/python2.7 /usr/bin/python
 
 ###4¡¢node°²×°
-	#tar  zxvf node-v0.10.1-linux-x86.tar.gz
+	#tar  zxvf node-v0.8.9.tar.gz
 	#cd node-v0.8.9
 	#./configure --prefix=/usr/local/nodejs8.9
 	#make 
