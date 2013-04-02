@@ -41,6 +41,7 @@ public class issuance implements Runnable
 		int i = 0;
 		for(stock st:updateList )
 		{
+			st.updateQt();
 			temp[i] = "{\"id\":\""+st.id+"\","+"\"buy_1\":\"" + st.Qt.buy_1 + "\"," + "\"buy_1_amount\":\"" +st.Qt.buy_1_amount+"\","+ "\"sell_1\": \""+st.Qt.sell_1 + "\"," + "\"sell_1_amount\":\""+ st.Qt.sell_1_amount + "\"}" ;
 			i++;
 		}
