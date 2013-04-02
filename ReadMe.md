@@ -116,6 +116,7 @@
 	切换到istock目录,所有文件添加读写执行权限,编译前确认已经配置正确JAVA_HOME环境变量
 	#cd istock
 	#chmod -R 755 ../istock
+	#dos2unix build.sh
 	#sh build.sh
 
 ###6、安装istock_push依赖的nodeJS模块
@@ -127,7 +128,11 @@
 四、配置和执行指引
 ===================================
 ###1、istock 配置和执行
-	切换到istock目录下执行,不带任何参数执行
+	切换到istock目录
+	首先执行以下命令确保istock.sh的格式为unix格式
+	#dos2unix istock.sh
+
+	不带任何参数运行
 	#sh istock.sh 
 	将默认使用当前目录的stockList.csv做为股票列表
 	默认使用9008作为监听端口
