@@ -15,12 +15,11 @@ var event = new EventEmitter();
 
 global.msg = '';
 
-var istockHost = '172.16.11.102';
+var istockHost = '127.0.0.1';
 var istockPort = '9008';
 var register = 'gfzq';
-var middlewareHost = '172.16.11.110';
+var middlewareHost = '127.0.0.1';
 var middlewarePort = '9001';
-var webPort = '8888';
 
 
 // the istock middleware 
@@ -33,7 +32,7 @@ var app = connect().use(istock_push(istockHost,istockPort,register,middlewareHos
 
 var server =http.createServer(app);
 
-server.listen(webPort, function()
+server.listen(8888, function()
 {
     console.log('Server listening at http://localhost:8888/');
 });

@@ -155,7 +155,6 @@
 	行情模拟器的监听端口 istockPort
 	中间件数据接收ip地址	middlewareHost
 	中间件数据接收监听端口	middlewarePort
-	web服务监听端口 webPort
 
 
 	istock_push中间件默认使用本地地址和端口9001和istock股票模拟器进行注册、消息传递，若需要做相应的变更，
