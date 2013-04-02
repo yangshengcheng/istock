@@ -54,7 +54,7 @@
 + RedHat Linux version 2.6
 + GNU Make 3.81 以上 (包含)
 + gcc version 4.1.2 以上 (包含)
-+ JDK 1.5 version 以上 (包含)
++ JDK 1.5 version 以上,推荐安装jdk1.6版本 (包含)
 + node v0.8.9
 + python 2.7.x (只限于2.7系列版本)
 
@@ -62,7 +62,11 @@
 三、安装步骤(在root用户下执行)
 ===================================
 ###1、编译环境安装
-		一般系统安装时已经将make和gcc安装，若是没有安装，请从安装光碟中找到相应的rpm文件进行安装
+		执行以下命令查看系统版本和编译工具版本
+		#cat /proc/version
+		#gcc -v
+		一般系统安装时已经将make和gcc安装，若是没有安装或者版本不正确，请从操作系统安装光碟中找到相应的rpm文件进行安装
+
 ###2、jdk安装
 	# chmod 755 jdk-6u24-linux-i586.bin 
 	#./jdk-6u24-linux-i586.bin
