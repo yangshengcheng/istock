@@ -1,0 +1,50 @@
+<html>
+<!--
+author: yangshengcheng
+date: 2013/4/1
+-->
+<head>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+          var socket = io.connect();
+          socket.on('connect', function() 
+		  {
+              socket.on('message', function(message)
+			  {
+					var obj = eval(message);
+					var text = "";
+
+					for(i=0;i<obj.length;i++)
+					{
+						if(i%2 == 0)
+						{
+							text = text + "<div style=\"width:50%;margin: 0 auto;text-align:center;background-color:#FFCCFF;font-family:Arial\">";
+						}
+						else
+						{
+							text = text + "<div style=\"width:50%;margin: 0 auto;text-align:center;font-family:Arial\">";	
+						}
+
+						text = text + "<span style=\"text-align:center\">" + "股票代码:" + obj[i].id + "</span> <br>"+ " <span>" + "买一 : " + obj[i].buy_1 + " </span>"+ " 成交量:" +  obj[i].buy_1_amount + "<br>"+ "<span>" +"卖一:" + obj[i].sell_1 + " 成交量:" + obj[i].sell_1_amount + "</span> </div> ";
+					}
+
+					document.getElementById("stock").innerHTML = text;					
+              });
+              socket.on('disconnect', function() 
+			  {
+					// add some manage code to deal the disconnect event!
+
+              });
+          });
+  </script>
+</head>
+<body>
+<div style="margin: 0 auto;text-align:center;font-family:Arial">
+<h2> <a> istock quote </a></h2>
+</div>
+<br>
+ <span id="messages"> </span>
+
+ <div id="stock"> </div>
+</body>
+</html>

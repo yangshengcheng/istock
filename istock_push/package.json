@@ -1,0 +1,12 @@
+{
+	"author": "yangshengcheng",
+	"email": "pcwl.vincent@gmail.com",
+	"name": "istock_push",
+	"version": "0.0.1",
+	"description": "push stock information for web browser!",
+	"dependencies": {
+		"connect": "2.7.3",
+		"socket.io": "0.9.13"
+	}
+
+}
