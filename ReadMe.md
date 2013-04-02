@@ -148,8 +148,8 @@
 ###2、istock_push中间的配置和运行(请先启动istock，再启动istock_push中间件)
 	istock_push除了使用系统内核的模块，还使用了connect 、socket.io这两个第三方模块，请将这两个模块安装于istock_push目录下
 
-	istock_push的web服务运行脚本为server.js,他默认绑定本地地址 ,默认的监听地址为 8888，假如这台服务器的地址为172.16.11.110 
-	请在浏览器中输入 http://172.16.11.110:8888, 则连接到了中间件服务器
+	istock_push的web服务运行脚本为server.js,他默认绑定本地地址 ,默认的监听地址为 8889，假如这台服务器的地址为172.16.11.110 
+	请在浏览器中输入 http://172.16.11.110:8889, 则连接到了中间件服务器
 	请根据实际情况修改server.js内的以下变量：
 	行情模拟器的ip地址	istockHost
 	行情模拟器的监听端口 istockPort
