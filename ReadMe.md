@@ -107,6 +107,8 @@
 	修改当前用户主目录下的.bash_profile文件,将node的bin目录添加到PATH环境变量中去
 	加入以下内容:
 	export PATH=$PATH:/usr/local/nodejs8.9/bin
+	执行让其立即生效
+	#. .bash_profile
 	
 	将node的bin目录加入PATH变量中,让其在系统启动的时候就生效
 	修改 /etc/rc.local
