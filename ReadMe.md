@@ -156,6 +156,10 @@
 	中间件数据接收ip地址   middlewareHost
 	中间件数据接收监听端口   middlewarePort
 	web服务监听端口   webPort
+	
+	* 注意1: 出现Error: listen EADDRINUSE错误时，请检查端口是否被占用.被占用的话请使用另外的端口
+	* 注意2: 假如istock和istock_push部署在不同的服务器上,请务必修改istockHost和middlewareHost这两个变量
+
 
 
 	istock_push中间件默认使用本地地址和端口9001和istock股票模拟器进行注册、消息传递，若需要做相应的变更，
