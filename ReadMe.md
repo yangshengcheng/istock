@@ -136,7 +136,8 @@
 	istock_push的web服务运行脚本为server.js,他默认绑定本地地址 ,默认的监听地址为 8888，假如这台服务器的地址为172.16.11.110 
 	请在浏览器中输入 http://172.16.11.110:8888, 则连接到了中间件服务器
 
-	istock_push中间件默认使用本地地址和端口9001和istock股票模拟器进行注册、消息传递，若需要做相应的变更，请在server.js中修改middlewareHost和middlewarePort这两个对应的变量
+	istock_push中间件默认使用本地地址和端口9001和istock股票模拟器进行注册、消息传递，若需要做相应的变更，
+	请在server.js中修改middlewareHost和middlewarePort这两个对应的变量
 
 	按照实际环境进行修改之后，在istock_push目录下执行以下命令运行此中间件服务
 	#node server.js
