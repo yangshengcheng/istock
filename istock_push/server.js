@@ -20,6 +20,7 @@ var istockPort = '9008';
 var register = 'gfzq';
 var middlewareHost = '127.0.0.1';
 var middlewarePort = '9001';
+var webPort = 8889;
 
 
 // the istock middleware 
@@ -32,9 +33,9 @@ var app = connect().use(istock_push(istockHost,istockPort,register,middlewareHos
 
 var server =http.createServer(app);
 
-server.listen(8888, function()
+server.listen(webPort, function()
 {
-    console.log('Server listening at http://localhost:8888/');
+    console.log('Server listening at http://localhost:' +webPort +'/');
 });
 
 // Attach the socket.io server
