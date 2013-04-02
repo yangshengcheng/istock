@@ -96,9 +96,13 @@
 	#make 
 	#make install
 
+	修改当前用户主目录下的.bash_profile文件,将node的bin目录添加到PATH环境变量中去
+	加入以下内容:
+	export PATH=$PATH:/usr/local/nodejs8.9/bin
+	
 	将node的bin目录加入PATH变量中,让其在系统启动的时候就生效
 	修改 /etc/rc.local
-	set PATH=$PATH:/usr/local/nodejs8.9/bin
+	export PATH=$PATH:/usr/local/nodejs8.9/bin
 
 ###5、编译istock程序,生成一个名为istock.jar的jar包
 	切换到istock目录,所有文件添加读写执行权限,编译前确认已经配置正确JAVA_HOME环境变量
